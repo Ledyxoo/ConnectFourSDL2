@@ -1,6 +1,6 @@
 # Connect Four - SDL2
 
-A classic Connect Four game developed in C using the SDL2 library. This project was created in my 2nd year engineering school.
+A classic Connect Four game developed in C using the SDL2 library. This project was created during my second year of engineering school.
 
 ## 🎮 How to play
 

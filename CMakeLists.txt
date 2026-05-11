@@ -60,7 +60,10 @@ add_custom_command(TARGET ConnectFour POST_BUILD
     $<TARGET_FILE_DIR:ConnectFour>/Assets
 )
 
-# Configuration spécifique à Windows (fenêtre sans console en Release)
+# Configuration spécifique à Windows
 if(WIN32)
-    set_target_properties(ConnectFour PROPERTIES WIN32_EXECUTABLE TRUE)
+    # On lie explicitement SDL2main pour que SDL_main soit géré correctement
+    if(TARGET SDL2::SDL2main)
+        target_link_libraries(ConnectFour PRIVATE SDL2::SDL2main)
+    endif()
 endif()
