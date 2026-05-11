@@ -1,0 +1,23 @@
+# Build artifacts
+build/
+bin/
+obj/
+
+# Compilers and IDEs
+.vscode/
+.vs/
+*.sln
+*.vcxproj
+*.user
+*.filters
+x64/
+Debug/
+Release/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Executables
+ConnectFour
+ConnectFour.exe
