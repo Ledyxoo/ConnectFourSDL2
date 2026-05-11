@@ -1,38 +1,38 @@
-# Connect Four (Puissance 4) - SDL2
+# Connect Four - SDL2
 
-Un jeu de Puissance 4 classique développé en C utilisant la bibliothèque SDL2. Ce projet a été porté de Windows vers Linux et est désormais compatible avec les deux plateformes.
+A classic Connect Four game developed in C using the SDL2 library. This project was created in my 2nd year engineering school.
 
-## 🎮 Comment jouer
+## 🎮 How to play
 
-Le but est d'aligner 4 pions de votre couleur (horizontalement, verticalement ou diagonalement).
+The goal is to align 4 tokens of your color (horizontally, vertically, or diagonally).
 
-1. Lancez le jeu.
-2. Choisissez si vous voulez jouer contre l'IA ou contre un autre joueur local.
-3. Utilisez les touches numériques pour placer vos pions :
-   - **0 à 6** : Choisir la colonne correspondante.
-   - **Échap** : Quitter le jeu.
+1. Launch the game.
+2. Choose whether you want to play against the AI or against another local player.
+3. Use the number keys to place your tokens:
+   - **0 to 6**: Choose the corresponding column.
+   - **Escape**: Quit the game.
 
-## 🛠️ Installation et Compilation
+## 🛠️ Installation and Compilation
 
-### Prérequis
-Vous devez avoir installé les bibliothèques SDL2 suivantes :
+### Prerequisites
+You must have the following SDL2 libraries installed:
 - SDL2
 - SDL2_image
 - SDL2_mixer
 - SDL2_ttf
 
-#### Sur Linux (Ubuntu/Debian)
+#### On Linux (Ubuntu/Debian)
 ```bash
 sudo apt update
 sudo apt install build-essential cmake libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
 ```
 
-#### Sur Windows
-1. Installez [CMake](https://cmake.org/download/).
-2. Installez un compilateur (ex: Visual Studio avec C++, ou MinGW).
-3. Téléchargez les versions de développement de SDL2, SDL2_image, SDL2_mixer et SDL2_ttf sur le site de [libsdl.org](https://www.libsdl.org/).
+#### On Windows
+1. Install [CMake](https://cmake.org/download/).
+2. Install a compiler (e.g., Visual Studio with C++, or MinGW).
+3. Download the development versions of SDL2, SDL2_image, SDL2_mixer, and SDL2_ttf from the [libsdl.org](https://www.libsdl.org/) website.
 
-### Compilation (Toutes plateformes)
+### Compilation (All platforms)
 ```bash
 mkdir build
 cd build
@@ -40,17 +40,17 @@ cmake ..
 cmake --build .
 ```
 
-## 📦 Exécutables (Releases)
+## 📦 Executables (Releases)
 
-Si vous ne souhaitez pas compiler le code vous-même, vous pouvez trouver des exécutables pré-compilés dans la section **Releases** de ce dépôt GitHub.
-- **Linux** : Téléchargez `ConnectFour-Linux.tar.gz`, extrayez-le et lancez `./ConnectFour`.
-- **Windows** : Téléchargez `ConnectFour-Windows.zip`, extrayez-le et lancez `ConnectFour.exe`.
+If you don't want to compile the code yourself, you can find pre-compiled executables in the **Releases** section of this GitHub repository.
+- **Linux**: Download `ConnectFour-Linux.tar.gz`, extract it, and run `./ConnectFour`.
+- **Windows**: Download `ConnectFour-Windows.zip`, extract it, and run `ConnectFour.exe`.
 
-## 📁 Structure du Projet
-- `src/` : Fichiers sources (.c)
-- `include/` : Fichiers d'en-tête (.h)
-- `Assets/` : Images et ressources du jeu
-- `CMakeLists.txt` : Fichier de configuration pour la compilation multiplateforme
+## 📁 Project Structure
+- `src/`: Source files (.c)
+- `include/`: Header files (.h)
+- `Assets/`: Images and game resources
+- `CMakeLists.txt`: Configuration file for cross-platform compilation
 
 ---
-Développé par Killian dans le cadre de ses études et mis à jour pour Linux.
+Developed by Ledyxoo
